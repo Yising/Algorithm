@@ -1,0 +1,16 @@
+
+class Solution {
+    public int findRepeatNumber(int[] nums) {
+        int i;
+        Set<Integer> set = new HashSet<Integer>();
+        
+        for (i = 0; i < nums.length; i++) {
+            if (set.contains(nums[i])) {
+                return nums[i];
+            }
+            set.add(nums[i]);
+        }
+        
+        return 0;
+    }
+}
