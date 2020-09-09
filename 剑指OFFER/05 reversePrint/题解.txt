@@ -1,0 +1,18 @@
+class Solution {
+    public int[] reversePrint(ListNode head) {
+        int count = 0;
+        ListNode headTemp = head;
+        int[] result;
+        while (headTemp != null) {
+            count++;
+            headTemp = headTemp.next;
+        }
+        result = new int[count];
+        headTemp = head;
+        while (headTemp != null) {
+            result[--count] = headTemp.val;
+            headTemp = headTemp.next;
+        }
+        return result;
+    }
+}
