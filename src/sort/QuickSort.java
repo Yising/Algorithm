@@ -8,7 +8,6 @@ public class QuickSort {
         int i = left;
         int j = right;
         int value = array[left];
-
         while (i < j) {
             while (i < j && array[j] > value) {
                 j--;

@@ -18,7 +18,7 @@ public class TestCase {
             System.out.printf("%d ", array[i]);
         System.out.printf("\n");
 
-        QuickSort.quickSort(array, 0, array.length - 1);
+        InsertSort.insertSort(array);
         //bubbleSort2(a, a.length);
 
         System.out.printf("after  sort:");
